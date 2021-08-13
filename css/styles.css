@@ -11,6 +11,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
+  --bs-messegner:#3b5998;
+  --bs-whatsapp: #4AC959;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -33,7 +35,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #bd5d38;
+  --bs-primary: #c2b280;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -41,7 +43,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 202,182,120;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -81,7 +83,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: var(--bs-primary);
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -603,6 +605,7 @@ progress {
   max-width: 100%;
   height: auto;
 }
+
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -4058,6 +4061,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+  align-items: center;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -5058,6 +5062,12 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   border-radius: 0.25rem;
+}
+
+.list-group-1{
+  list-style-type: none;
+  margin:0px;
+  padding:0px;
 }
 
 .list-group-numbered {
@@ -7252,8 +7262,13 @@ textarea.form-control-lg {
 .mx-auto {
   margin-right: auto !important;
   margin-left: auto !important;
-}
+  }
 
+.mx-auto-2 {
+  margin-right: auto !important;
+  margin-left: auto !important;
+  object-fit: contain;
+}
 .my-0 {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -7355,6 +7370,7 @@ textarea.form-control-lg {
 
 .mb-2 {
   margin-bottom: 0.5rem !important;
+  margin-top: 0.5rem !important;
 }
 
 .mb-3 {
@@ -11375,13 +11391,13 @@ p.lead {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
-  background-color: #495057;
-  color: #fff;
+  height: 7rem;
+  width: 7rem;
+  /* background-color: #495057;
+  color: #fff; */
   border-radius: 100%;
-  font-size: 1.5rem;
-  margin-right: 1.5rem;
+  font-size: 3rem;
+  margin-right: 3rem;
 }
 .social-icons .social-icon:last-child {
   margin-right: 0;
@@ -11392,6 +11408,36 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
+}
+
+.whatsapp-icon
+{
+  text-decoration: none;
+  color: var(--bs-whatsapp);
+}
+
+.messenger-icon
+{
+  text-decoration: none;
+  color: var(--bs-messegner);
+}
+
+.facebook-icon
+{
+  color: var(--bs-messegner);
+}
+
+.undrln-none
+{
+  text-decoration: none;
+  color: #bd5d38;
+}
+
+
+.undrln
+{
+  text-decoration: undedrline;
+  color: #bd5d38;
 }
 
 section.resume-section {
