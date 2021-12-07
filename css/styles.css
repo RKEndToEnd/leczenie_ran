@@ -11453,6 +11453,16 @@ p.lead {
   color: #c2b280;
 }
 
+.blink_me {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
 section.resume-section {
   display: flex;
   align-items: center;
